@@ -1,2 +1,2 @@
 # Front-End-Study
-📌 Repositório criado para documentar meu processo de aprendizado em Front-End com foco nos cursos da Alura. Aqui, irei compartilhar projetos, anotações e meu progresso ao longo dos estudos. Se quiser algo mais específico ou detalhado, me avise!
+📌 Repository created to document my learning process in Front-End with a focus on Alura courses. Here, I will share projects, notes and my progress throughout my studies. If you want something more specific or detailed, let me know!
