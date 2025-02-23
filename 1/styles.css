@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400..600&display=swap');
 
 * {
     margin: 0;
@@ -8,13 +8,13 @@
     
 .body{
     height: 100vh;
-    background-color: black;
+    background-color: rgb(51, 51, 51);
     color: white;
     box-sizing: border-box;
 }
 
 .Destaque {
-    color: #22D4FD;
+    color: #E32636;
     font-weight: normal;
 }
 
@@ -22,6 +22,7 @@
     width: 388px;  
     height: 450px; 
     border-radius: 16px;
+    border: 3px solid #E32636;
 }
 
 .Titulo{
@@ -31,7 +32,8 @@
 
 .Texto{
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+    font-family: "Montserrat", serif;
 }
 
 .apresentacao {
@@ -39,12 +41,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    
+}
+
+.tituloredes {
+    font-size: 24px;
+    font-weight: 400px;
+    font-family: 'Krona One', sans-serif;
 }
 
 .botoes{
+    align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-between; 
+    gap: 32px;
 }
 
 .apresentacao__conteudo{
@@ -54,19 +64,20 @@
     gap: 40px;
 }   
 
-.botao{
-    width: 280px;
+/* .botao{
+    width: 378px;
     font-size: 24px;
     font-weight: 600px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #22D4FD;
+    font-family: "Montserrat", serif;
+    border: 2px solid #E32636;
     text-decoration: none;
-    border-radius: 16px;
-    padding: 21.5px 0px;
-    color: black;
+    border-radius: 8px;
+    padding: 16px 0px;
+    color: white;
     font-weight: bold;
-    text-align: center;
+    text-align: center; */
 
+    
     /* width: 280px;
     font-family: 'Montserrat', sans-serif;
     display: inline-block; /* Permite aplicar padding e bordas 
@@ -78,4 +89,56 @@
     font-size: 24px;
     font-weight: bold;
     transition: 0.3s;  Efeito suave ao passar o mouse */
+
+.button {
+    width: 378px;
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(#E32636, #25292e);
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: grab;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+    font-weight: 600px;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 16px 0px;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 100ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button :hover {
+  box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+  opacity: .85;
+}
+
+.button :active {
+  outline: 0;
+}
+
+.button :focus {
+  box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+@media (max-width: 420px) {
+  .button {
+    height: 48px;
+  }
 }
