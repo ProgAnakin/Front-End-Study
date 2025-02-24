@@ -5,7 +5,26 @@
     margin: 0;
     border: 0;
     }
-    
+
+.header{
+
+}    
+
+.header__menu{
+    display: flex;
+    justify-content:center;
+    gap: 40px;
+} 
+
+.header__menu__link{
+    color: #E32636;
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+} 
+
 .body{
     /* height: 100vh; */
     background-color: rgb(51, 51, 51);
@@ -19,8 +38,8 @@
 }
 
 .profilepic{
-    width: 388px;  
-    height: 450px; 
+    width: 488px;  
+    height: 550px; 
     border-radius: 16px;
     border: 3px solid #E32636;
 }
@@ -32,7 +51,7 @@
 
 .Texto{
     font-size: 24px;
-    font-weight: 400px;
+    font-weight: 400;
     font-family: "Montserrat", serif;
 }
 
@@ -45,7 +64,7 @@
 
 .tituloredes {
     font-size: 24px;
-    font-weight: 400px;
+    font-weight: 400;
     font-family: 'Krona One', sans-serif;
 }
 
@@ -101,8 +120,8 @@
     color: #fff;
     gap: 16px;
     display: flex;
-    padding: 16px 0px;
-    font-weight: 600px;
+    padding: 21.5px 0px;
+    font-weight: 600;
     justify-content: center;
 
     /* Additional extras outside the course */
