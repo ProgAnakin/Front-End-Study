@@ -1,34 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400..600&display=swap');
 
+:root {
+    --cor-primaria: rgb(51, 51, 51);
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #E32636;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: "Montserrat", serif;
+}
+
 * {
     margin: 0;
     border: 0;
     }
 
 .header{
-
+    padding: 2% 0% 0% 15%;
 }    
 
 .header__menu{
     display: flex;
-    justify-content:center;
-    gap: 40px;
+    gap: 80px;
 } 
 
 .header__menu__link{
-    color: #E32636;
-    font-family: "Montserrat", serif;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
-    margin-top: 20px;
 } 
 
 .body{
-    /* height: 100vh; */
-    background-color: rgb(51, 51, 51);
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     box-sizing: border-box;
 }
 
@@ -38,21 +44,20 @@
 }
 
 .profilepic{
-    width: 488px;  
-    height: 550px; 
+    width: 38%;   
     border-radius: 16px;
-    border: 3px solid #E32636;
+    border: 3px solid var(--cor-terciaria);
 }
 
 .Titulo{
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 .Texto{
     font-size: 24px;
     font-weight: 400;
-    font-family: "Montserrat", serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao {
@@ -65,7 +70,7 @@
 .tituloredes {
     font-size: 24px;
     font-weight: 400;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 .botoes{
@@ -83,41 +88,15 @@
     gap: 40px;
 }   
 
-/* .botao{
-    width: 378px;
-    font-size: 24px;
-    font-weight: 600px;
-    font-family: "Montserrat", serif;
-    border: 2px solid #E32636;
-    text-decoration: none;
-    border-radius: 8px;
-    padding: 16px 0px;
-    color: white;
-    font-weight: bold;
-    text-align: center; */
-
-    
-    /* width: 280px;
-    font-family: 'Montserrat', sans-serif;
-    display: inline-block; /* Permite aplicar padding e bordas 
-    padding: 10px 20px; /* Espaçamento interno 
-    background-color: #22D4FD;
-    border-radius: 40px; /* Borda arredondada 
-    color: black;
-    text-decoration: none; /* Remove o sublinhado 
-    font-size: 24px;
-    font-weight: bold;
-    transition: 0.3s;  Efeito suave ao passar o mouse */
-
 .button {
     width: 378px;
     align-items: center;
-    font-family: "Montserrat", serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     margin: 0;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: var(--cor-secundaria);
     gap: 16px;
     display: flex;
     padding: 21.5px 0px;
@@ -126,7 +105,7 @@
 
     /* Additional extras outside the course */
     background-color: initial;
-    background-image: linear-gradient(#E32636, #25292e);
+    background-image: linear-gradient(var(--cor-terciaria), #25292e);
     border-radius: 8px;
     border-width: 0;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
@@ -152,9 +131,10 @@
 }
 
 .footer{
-    background-color: #E32636;
+    background-color: var(--cor-terciaria);
     text-align: center;
-    font-family: "Montserrat", serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
+    padding: 0.5%;
 }
