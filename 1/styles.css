@@ -4,7 +4,7 @@
 :root {
     --cor-primaria: rgb(51, 51, 51);
     --cor-secundaria: #f6f6f6;
-    --cor-terciaria: #E32636;
+    --cor-terciaria: #181818;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: "Montserrat", serif;
@@ -27,7 +27,7 @@
 .header__menu__link{
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 } 
@@ -39,23 +39,23 @@
 }
 
 .Destaque {
-    color: #E32636;
+    color: var(--cor-terciaria);
     font-weight: normal;
 }
 
 .profilepic{
-    width: 38%;   
+    width: 50%;  
     border-radius: 16px;
     border: 3px solid var(--cor-terciaria);
 }
 
 .Titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
 .Texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     font-family: var(--fonte-secundaria);
 }
@@ -65,10 +65,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    gap: 82px;
 }
 
 .tituloredes {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     font-family: var(--fonte-primaria);
 }
@@ -82,17 +83,17 @@
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }   
 
 .button {
-    width: 378px;
+    width: 80%;
     align-items: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: 0;
     text-align: center;
     text-decoration: none;
@@ -108,10 +109,9 @@
     background-image: linear-gradient(var(--cor-terciaria), #25292e);
     border-radius: 8px;
     border-width: 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+    box-shadow: 0 10px 20px rgba(199, 15, 15, 0.1),0 3px 6px rgba(0, 0, 0, .05);
     box-sizing: border-box;
     cursor: grab;
-    height: 52px;
     line-height: 1;
     outline: none;
     overflow: hidden;
@@ -134,7 +134,47 @@
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 0.5%;
+}
+
+@media (max-width:1024px) {
+
+    .header{
+        padding: 8%;
+    } 
+
+    .header__menu{
+        justify-content: center;
+    } 
+
+    .profilepic{
+        width:fit-content;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    } 
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .Titulo{
+        text-align: center;
+    }
+
+    .Texto{
+        text-align: center;
+    }
+
+    .tituloredes{
+        text-align: center;
+    }
+
+    .header__menu__link{
+        font-size: 2rem;
+    }
+    
 }
