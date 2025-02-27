@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home </title>
+    
     <link rel="stylesheet" href="styles.css">
+    
     <link rel="stylesheet" href="categories.html">
     <link rel="stylesheet" href="support.html">
+
+    <title> Home </title>
 </head>
 <body>
     <header>
@@ -20,42 +23,149 @@
         </nav>
     </header>
 
-    <section>
+    <section class="container">
         <div class="list">
-            <div class="item">
+
+            <div class="item active">
                 <div class="arm-img">
-                    <img src="Photos/arm1.png" alt="Arma 1">
-                    <div class="content">
-                        <p class="arm-information">
-                            Alterar brevemente
-                        </p>
-                        <h2>
-                            Nome da arma
-                        </h2>
-                        <p class="description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat quae tenetur, debitis velit consequatur placeat voluptates beatae eligendi veritatis exercitationem repellat, reprehenderit consectetur voluptatum, quibusdam incidunt dolorem architecto. Natus.
-                        </p>
-                        <button>
-                            Botão
-                        </button>
-                    </div>
+                    <img src="Photos/arm1.png" alt="Arma 1"> 
+                </div>
+                <div class="content">
+                    <p class="arm-information">
+                        Alterar brevemente
+                    </p>
+                    <h2>
+                        M4 Carbine
+                    </h2>
+                    <p class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat quae tenetur, debitis velit consequatur placeat voluptates beatae eligendi veritatis exercitationem repellat, reprehenderit consectetur voluptatum, quibusdam incidunt dolorem architecto. Natus.
+                    </p>
+                    <button class="information">
+                        Botão
+                    </button>
                 </div>
             </div>
+
+            <div class="item">
+                <div class="arm-img">
+                    <img src="Photos/arm2.png" alt="Arma 1"> 
+                </div>
+                <div class="content">
+                    <p class="arm-information">
+                        Alterar brevemente
+                    </p>
+                    <h2>
+                        MK18 Mod 1
+                    </h2>
+                    <p class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat quae tenetur, debitis velit consequatur placeat voluptates beatae eligendi veritatis exercitationem repellat, reprehenderit consectetur voluptatum, quibusdam incidunt dolorem architecto. Natus.
+                    </p>
+                    <button class="information">
+                        Botão
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="arm-img">
+                    <img src="Photos/arm3.png" alt="Arma 1"> 
+                </div>
+                <div class="content">
+                    <p class="arm-information">
+                        Alterar brevemente
+                    </p>
+                    <h2>
+                        HK416
+                    </h2>
+                    <p class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat quae tenetur, debitis velit consequatur placeat voluptates beatae eligendi veritatis exercitationem repellat, reprehenderit consectetur voluptatum, quibusdam incidunt dolorem architecto. Natus.
+                    </p>
+                    <button class="information">
+                        Botão
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="arm-img">
+                    <img src="Photos/arm4.png" alt="Arma 1"> 
+                </div>
+                <div class="content">
+                    <p class="arm-information">
+                        Alterar brevemente
+                    </p>
+                    <h2>
+                        M4A1 Carbine
+                    </h2>
+                    <p class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat quae tenetur, debitis velit consequatur placeat voluptates beatae eligendi veritatis exercitationem repellat, reprehenderit consectetur voluptatum, quibusdam incidunt dolorem architecto. Natus.
+                    </p>
+                    <button class="information">
+                        Botão
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="arm-img">
+                    <img src="Photos/arm5.png" alt="Arma 1"> 
+                </div>
+                <div class="content">
+                    <p class="arm-information">
+                        Alterar brevemente
+                    </p>
+                    <h2>
+                        Glock 17
+                    </h2>
+                    <p class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat quae tenetur, debitis velit consequatur placeat voluptates beatae eligendi veritatis exercitationem repellat, reprehenderit consectetur voluptatum, quibusdam incidunt dolorem architecto. Natus.
+                    </p>
+                    <button class="information">
+                        Botão
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="arm-img">
+                    <img src="Photos/arm6.png" alt="Arma 1"> 
+                </div>
+                <div class="content">
+                    <p class="arm-information">
+                        Alterar brevemente
+                    </p>
+                    <h2>
+                        SIG Sauer P228
+                    </h2>
+                    <p class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat quae tenetur, debitis velit consequatur placeat voluptates beatae eligendi veritatis exercitationem repellat, reprehenderit consectetur voluptatum, quibusdam incidunt dolorem architecto. Natus.
+                    </p>
+                    <button class="information">
+                        Botão
+                    </button>
+                </div>
+            </div>
+
         </div>
 
         <div class="arrows">
-            <button> <img src="Photos/seta.png" alt="Left-Arrow"> </button>
-            <button> <img src="Photos/seta.png" alt="Right-Arrow"> </button>
+            <button id="prev"> <img src="Photos/seta.png" alt="Left-Arrow"> </button>
+            <button id="next"> <img src="Photos/seta.png" alt="Right-Arrow"> </button>
         </div>
 
         <div class="indicators">
             <div class="number"> 01 </div>
             <ul>
+                <li class="active"> </li>
+                <li> </li>
+                <li> </li>
                 <li> </li>
                 <li> </li>
                 <li> </li>
             </ul>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
