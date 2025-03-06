@@ -14,6 +14,81 @@
     font-family: var(--F1)
 }
 
+/* HOME CSS */
+
+.body_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.menu {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.menu h1 {
+    margin-bottom: 20px;
+}
+.menu nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+.menu a, .submenu > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+}
+.menu a:hover, .submenu > a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+.submenu {
+    position: relative;
+}
+.submenu-content {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 150px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.submenu:hover .submenu-content {
+    display: flex;
+}
+.submenu-content a {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.submenu-content a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/*  ARM - 1º custom */
+
 body {
     background-color: #000;
     color: #fff;
@@ -216,7 +291,7 @@ section {
     }
 }
 
-/* 2º custom */
+/* ARM - 2º custom */
 
 section {
 
